@@ -14,13 +14,12 @@ git clone https://github.com/dortmans/example_behaviors.git
 roscd && cd ..
 catkin_make
 ```
-
-Run example behavior autonomously:
-```
-roslaunch example_flexbe_behaviors example_behavior.launch
-```
-
-Or use the operator console to edit and/or run a behavior:
+Use the operator console to edit, run and monitor a behavior:
 ```
 roslaunch flexbe_app flexbe_full.launch
+```
+
+Or run a behavior standalone:
+```
+roslaunch example_flexbe_behaviors behavior.launch behavior:="Example Behavior"
 ```

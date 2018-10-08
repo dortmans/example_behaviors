@@ -2,12 +2,12 @@
 
 <launch>
 <arg name="behaviors_package" default="flexbe_behaviors" />
-<arg name="behavior_name" default="Example Behavior" />
+<arg name="behavior" default="Example Behavior" />
 
 <node name="behavior" pkg="flexbe_onboard" type="start_behavior" output="screen" respawn="true">
     <param name="behaviors_package" value="$(arg behaviors_package)"/>
 </node>
 
-<node name="behavior_launcher" pkg="flexbe_widget" type="be_launcher" output="screen" args="-b '$(arg behavior_name)'" />
+<node name="behavior_launcher" pkg="flexbe_widget" type="be_launcher" output="screen" args="-b '$(arg behavior)'" />
 
 </launch>
